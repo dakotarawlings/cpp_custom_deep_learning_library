@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -flto -shared  -o FFNN_pymodule.cpython-38-x86_64-linux-gnu.so CMakeFiles/FFNN_pymodule.dir/FFNN_module.cpp.o 
