@@ -2,7 +2,7 @@
 # Custom deep learning library in C++
 
 <p float ="left" align="center">
-  <img style="padding-right: 100px;" src="/cpp_FFNN_module/readme_pictures/video.gif" height="300" >
+  <img style="padding-right: 100px;" src="/readme_pictures/video.gif" height="300" >
 </p>
 
 ### Web App Link: https://number-recognition-app.herokuapp.com/
@@ -16,14 +16,13 @@
 * All development for this project was completed on a linux kernal via WSL2 
 
 ## Resources
-**Python version:** 3.8
 
 **Packages/software:** pibind11, linux/WSL2/Bash, pandas, numpy, flask, pickle, pillow
 
-**Languages:** C++, python, JavaScript, HTML, CSS
+**Languages:** C++, python (3.8), JavaScript, HTML, CSS
 
-## C++ DLL/module documentation
-* ## General syntax:
+## C++ DLL/module documentation (for python)
+* ## General syntax for using module in python:
   - ### ***model=FFNN_pymodeule.FFNN_Builder()*** --> Create an instance of a FF neural net
     - **Member variables:**
       - modelTopology -> List[int]
@@ -68,7 +67,7 @@ model.predict([1, 0])
 ## Testing/demostrating the Library -> MNIST data model and webapp
 
 <p float ="left" align="center">
-  <img style="padding-right: 100px;" src="/cpp_FFNN_module/readme_pictures/homepage1.png" height="300" >
+  <img style="padding-right: 100px;" src="readme_pictures/homepage1.png" height="300" >
 </p>
 
 * ## Training data preparation:
@@ -79,7 +78,7 @@ model.predict([1, 0])
 * ## Model building / evaluation:
 
 <p float ="left" align="center">
-  <img style="padding-right: 100px;" src="/cpp_FFNN_module/readme_pictures/heatmap2.png" height="300" >
+  <img style="padding-right: 100px;" src="readme_pictures/heatmap2.png" height="300" >
    <br>
   <em>Confusion matrix for the model applied to ~8,000 testing images. Accuracy: 87% </em>
   </br>
@@ -95,11 +94,11 @@ model.predict([1, 0])
 
 * ## Web Application:
   - Used flask to build an API that recieves a handrawn image, processes the image for input into the model, and implements the model to predict the class (digit)
-  - Image processing function:
+  - Custom image processing function:
  
   <p float ="left" align="center">
-  <img style="padding-right: 100px;" src="/cpp_FFNN_module/readme_pictures/TestCharachter.jfif" height="300" >
-  <img style="padding-right: 100px;" src="/cpp_FFNN_module/readme_pictures/ProcessedFigure.png" height="300" >
+  <img style="padding-right: 100px;" src="readme_pictures/TestCharachter.jfif" height="300" >
+  <img style="padding-right: 100px;" src="readme_pictures/ProcessedFigure.png" height="300" >
   <br>
   <em>Left: Raw image recieved from HTML. Right: Processed image following automated image processing in the flask app </em>
   </br>
