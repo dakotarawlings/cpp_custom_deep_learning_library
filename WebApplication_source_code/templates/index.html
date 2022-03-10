@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Charachter Classifier</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+
+<body style="background-color: 	SlateBlue;color:white">
+
+    <div class="imagebanner">
+    </div>
+
+    <div class="text-center">
+        <h1 class="banner"> Handwritten Number Classifier </h1>
+        <h3 class="banner2"> (Built using Dakota's custom deep learning library written in c++) </h3>
+        <h2 class="InstructionBanner"> Draw a number in the box below and click submit </h2>
+
+        <div class="row row-centered">
+        <div class="column col-centered">
+
+        <br>  
+        <canvas id="canvas" width="200" height="200"></canvas>
+        </br>
+        
+        <br>
+        <input type="button" class="btn btn-secondary" style="font-size:10px; background:Black;" value="erase" id="erase" />
+        </br>
+    
+        </div>
+
+        <div class="column col-centered">
+
+        <h3 id="predictionLabel" class="text-center predictLabel "> Predicted charachter: </h3>
+        <h1 id="prediction" class="text-center prediction-element"></h1>
+        </div>
+        </div>
+
+        <br>
+        <button id="button" type="button" class="btn btn-secondary"
+            style="font-size:20px; background:DodgerBlue;">Submit</button>  
+        </br>
+     
+    </div>
+
+</body>
+
+<script src="../static/js/script.js"></script>
+
+</html>

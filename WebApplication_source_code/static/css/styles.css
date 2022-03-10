@@ -1,0 +1,116 @@
+/*define formatting for image at top of page*/
+.imagebanner {
+
+    position: relative;
+    height: 150px;
+    padding: 1px;
+    margin-top: -2px;
+    margin-left: -10px;
+    background: teal;
+        background-image: url("../images/BannerPicture.jpg");
+        background-size: cover;
+    
+}
+
+/*define formatting for our HTML canvas element*/
+canvas {
+    cursor: crosshair;
+    border: 5px solid #000000;
+    margin-top: 10px; 
+    border-radius:50px;
+    margin-bottom: -20px; 
+    box-shadow: 0 0 5px 5px DodgerBlue;
+}
+
+/*define formatting for the element that instructs the user on what to do*/
+.InstructionBanner {
+    color:white; 
+    font-weight: bold;
+    border-radius:50px;
+    text-shadow: 10px 10px 20px DodgerBlue;
+    margin-top: 20px; 
+    margin-bottom: 0px; 
+    font-family: "Montserrat", sans-serif;    
+}
+
+/*formatting for element that labels the models prediction*/
+.predictLabel {
+    color:black; 
+    font-weight: bold;
+}
+
+/* formatting for the main title heading on the webpage*/
+.banner {
+    color:white; 
+    font-weight: bold;
+    background-color:Gray; 
+    line-height: 90px; 
+    height: 90px; 
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+    font-family: "Montserrat", sans-serif;
+}
+
+/* formatting for the secondary main title heading on the webpage*/
+.banner2 {
+    color:white; 
+    font-weight: bold;
+    background-color:Gray; 
+    line-height: 0px; 
+    height: 40px; 
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+    font-family: "Montserrat", sans-serif;
+}
+
+/*General formatting for the body*/
+.text-center {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+/*formatting for our colums that hold our canvas and our predicted digit*/
+.column {
+    float: center;
+    width: auto;
+  }
+
+.col-centered {
+
+    padding-right: 10px;
+    padding-left: 10px;
+    
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:center;
+    vertical-align: top;
+    /* inline-block space fix */
+    margin-right:auto;
+    margin-left:auto;
+    }
+
+/*formatting for our row that holds our canvas and our predicted element*/
+.row-centered {
+    text-align:center;
+    vertical-align: top;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,6 @@
+gunicorn==20.1.0
+colorama==0.4.4
+flask==2.0.2
+numpy
+Pillow
+
