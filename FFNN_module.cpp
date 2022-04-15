@@ -43,15 +43,11 @@ struct NeuronConnection
 class SingleNeuron;
 typedef vector<SingleNeuron> Layer;
 
-//Class that defines the member functions and variables accosiated with the behavior of a single node in a network
-/**
- * Sum numbers in a vector.
- *
- * This sum is the arithmetic sum, not some other kind of sum that only
- * mathematicians have heard of.
- *
- * @param values Container whose values are summed.
- * @return sum of `values`, or 0.0 if `values` is empty.
+
+
+ 
+ /**
+ * Class that defines the member functions and variables associated with the behavior of a single node in a network
  */
 class SingleNeuron
 {
@@ -96,8 +92,14 @@ double SingleNeuron::training_rate = 0.15;
 double SingleNeuron::learning_momentum = 0.5; 
 
 
-//Node constructor- takes in the number of outputs, the neuron index in the layer, 
-//and the activation function type, and initializes the vector of connection objects with random output weights
+
+/**
+ * Node constructor- takes in the number of outputs, the neuron index in the layer, 
+ * and the activation function type, and initializes the vector of connection objects with random output weights
+ * @param numOutputs (int) number of outputs from the neuron
+ * @param Index (int) Index of the neuron in the layer
+ * @param functionType_ (string) string indicating the type of activation function ("tanh", "relu", "sigmoid")
+ */
 SingleNeuron::SingleNeuron(unsigned numOutputs, unsigned Index, string functionType_)
 {
 	for (unsigned c = 0; c < numOutputs; ++c)
@@ -109,7 +111,11 @@ SingleNeuron::SingleNeuron(unsigned numOutputs, unsigned Index, string functionT
 	NeuronIndex = Index;
 }
 
-//activation fnction for a neuron object. The specific function used depends on the state of the member variable functionType
+/**
+ * activation fnction for a neuron object. The specific function used depends on the state of the member variable functionType
+ * @param x x(float) input to the activation function
+ * @return (float) Output from the activation function
+ */
 double SingleNeuron::activationFunction(double x)
 {
 	double output;
@@ -120,7 +126,11 @@ double SingleNeuron::activationFunction(double x)
 }
 
 
-//derivative of the activation function for backpop
+/**
+ * Derivative of an activation fnction for a neuron object. The specific function used depends on the state of the member variable functionType
+ * @param x (float) input to the activation function
+ * @return (float) Output from the activation function
+ */
 double SingleNeuron::activationFunctionDerivative(double x)
 {
 	double output;
@@ -130,7 +140,11 @@ double SingleNeuron::activationFunctionDerivative(double x)
 	return output;
 }
 
-//member function for feeding values from the previous layer of neurons through the  neuron (i.e the activation function)
+
+/**
+ * member function for feeding values from the previous layer of neurons through the  neuron (i.e the activation function)
+ * @param prevLayer x(Layer) previous layer of neurons
+ */
 void SingleNeuron::feedForward(const Layer& prevLayer)
 {
 	double sum = 0.0;
@@ -146,7 +160,11 @@ void SingleNeuron::feedForward(const Layer& prevLayer)
 }
 
 
-//member function to update the input weights to the neuron  (i.e. the output weights of a previous layer) based on the current gradient during backprop
+
+/**
+ * member function to update the input weights to the neuron  (i.e. the output weights of a previous layer) based on the current gradient during backprop
+ * @param prevLayer x(Layer) previous layer of neurons
+ */
 void SingleNeuron::updateInputWeights(Layer &prevLayer)
 {
 	//loop through all of the neurons in the previous layer and update the outputweight and the delta output weight
