@@ -101,8 +101,6 @@ print('Test image:', catTest)
 print('Prediction:')
 print(np.array(model.predict(testImage)).argmax())
 
-
-
 #Apply the model to the testing data 
 #keep track of our predicted classes
 y_true=[]
