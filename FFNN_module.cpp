@@ -1,4 +1,4 @@
-/*
+/**
 This script defines 3 classes that serve as a library for building a simple feed forward neural network
 A pibind11 wrapper is defined at the end to build a python DLL
 
@@ -44,6 +44,15 @@ class SingleNeuron;
 typedef vector<SingleNeuron> Layer;
 
 //Class that defines the member functions and variables accosiated with the behavior of a single node in a network
+/**
+ * Sum numbers in a vector.
+ *
+ * This sum is the arithmetic sum, not some other kind of sum that only
+ * mathematicians have heard of.
+ *
+ * @param values Container whose values are summed.
+ * @return sum of `values`, or 0.0 if `values` is empty.
+ */
 class SingleNeuron
 {
 public:

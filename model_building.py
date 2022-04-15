@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 Script to build a model for classifying images of handwritten digits
 
